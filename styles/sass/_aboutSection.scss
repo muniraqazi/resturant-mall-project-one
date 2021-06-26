@@ -1,7 +1,7 @@
 // about section
 
 .overlayImgContainer {
-  border: 2px solid red;
+  // border: 2px solid red;
   position: relative;
   width: 100%;
 }
@@ -14,18 +14,35 @@
 
 .circle {
   height: 50px;
-  width: 50px;
+  min-width: 50px;
   background-color: $yellow;
   border-radius: 50%;
   position: relative;
+  margin-right: 15px;
   // display: inline-block;
+  i {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    
+  }
 }
 
-i {
-  position: absolute;
-  top: 10px;
-  right: 5px;
+i.fa-map-marker-alt {
+  left: 14px;
 }
+
+i.fa-sticky-note {
+  left: 14px;
+}
+
+i.fa-phone {
+  left: 10px;
+}
+
+
+
+
 
 h2 {
   font-family: $header-font;
@@ -46,9 +63,24 @@ p {
 
 .aboutSectionContainer {
   background-color: $pine;
-  height: 600px;
+  height: 80vh;
+  ul {
+    padding-top: 13%;
+  }
 }
 
-.about {
+.aboutSection {
   display: flex;
+  flex-wrap: wrap;
+  // margin: 0 50px;
+  // flex-direction: column;
+
+  li {
+    width: 50%;
+    // margin: 20px;
+    padding: 20px;
+    list-style: none;
+    display: flex;
+  }
 }
+

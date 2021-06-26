@@ -251,7 +251,7 @@ header {
 h1 {
   color: #2B331B;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 4.3rem;
+  font-size: 6rem;
   font-weight: 600;
   text-transform: uppercase;
   color: #FFFF;
@@ -293,7 +293,7 @@ h1 span {
   list-style: none;
 }
 .headerNav ul li a {
-  font-size: 1.25rem;
+  font-size: 1.8rem;
   font-family: "Josefin Sans", sans-serif;
   color: #FFFF;
   text-decoration: none;
@@ -314,7 +314,6 @@ nav {
 }
 
 .overlayImgContainer {
-  border: 2px solid red;
   position: relative;
   width: 100%;
 }
@@ -327,16 +326,28 @@ nav {
 
 .circle {
   height: 50px;
-  width: 50px;
+  min-width: 50px;
   background-color: #FFD300;
   border-radius: 50%;
   position: relative;
+  margin-right: 15px;
 }
-
-i {
+.circle i {
   position: absolute;
   top: 10px;
   right: 5px;
+}
+
+i.fa-map-marker-alt {
+  left: 14px;
+}
+
+i.fa-sticky-note {
+  left: 14px;
+}
+
+i.fa-phone {
+  left: 10px;
 }
 
 h2 {
@@ -358,11 +369,105 @@ p {
 
 .aboutSectionContainer {
   background-color: #2B331B;
-  height: 600px;
+  height: 80vh;
+}
+.aboutSectionContainer ul {
+  padding-top: 13%;
 }
 
-.about {
+.aboutSection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.aboutSection li {
+  width: 50%;
+  padding: 20px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.foodSection {
+  background-color: #171B0E;
+}
+
+.bestBurgers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bestBurgersTxt {
+  width: 40%;
+  padding: 6.3% 10% 6.3% 0;
+}
+
+.leftImgContainer {
+  -webkit-box-shadow: 20px 20px #FFD300;
+          box-shadow: 20px 20px #FFD300;
+  width: 40%;
+}
+
+.trySomething {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.trySomethingTxt {
+  text-align: right;
+  width: 40%;
+  padding: 6.3% 0 6.3% 10%;
+}
+
+.rightImgContainer {
+  -webkit-box-shadow: -20px 20px #FFD300;
+          box-shadow: -20px 20px #FFD300;
+  width: 40%;
+}
+
+.yellowBtn {
+  padding: 10px 10px;
+  background-color: #FFD300;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  margin: 20px 0;
+}
+
+img {
+  width: 100%;
+}
+
+h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3.5rem;
+}
+
+p {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
 }

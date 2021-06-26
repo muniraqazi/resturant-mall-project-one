@@ -3,4 +3,28 @@
 @import "mixins";
 @import "header";
 @import "aboutSection";
+@import "foodSection";
 
+
+img {
+  width: 100%;
+}
+
+h2 {
+  font-family: $header-font;
+  font-size: 3.5rem;
+}
+
+p {
+  font-family: $body-font;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+}

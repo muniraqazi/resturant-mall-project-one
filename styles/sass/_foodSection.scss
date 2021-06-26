@@ -1,0 +1,48 @@
+.foodSection {
+  background-color: $almost-black;
+  // display: flex;
+}
+
+.bestBurgers {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bestBurgersTxt {
+  width: 40%;
+  padding: 6.3% 10% 6.3% 0;
+}
+
+.leftImgContainer {
+  box-shadow: 20px 20px $yellow;
+  width: 40%;
+}
+
+.trySomething {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.trySomethingTxt {
+  // padding: 0 15%;
+  text-align: right;
+  width: 40%;
+  padding: 6.3% 0 6.3% 10%;
+}
+
+.rightImgContainer {
+  box-shadow: -20px 20px $yellow;
+  width: 40%;
+}
+
+.yellowBtn {
+  padding: 10px 10px;
+  background-color: $yellow;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  margin: 20px 0;
+}
+
+
