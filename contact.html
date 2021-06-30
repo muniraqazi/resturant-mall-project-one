@@ -40,7 +40,7 @@
           <i class="fab fa-twitter fa-2x"></i>
           <i class="fab fa-whatsapp fa-2x"></i>
         </div>
-        <p>info@email.com</p>
+        <p class="emailTxt">info@email.com</p>
         <p>
           123-456-7890 <br>
           123 Queen Street West, Unit 10 <br>
@@ -49,24 +49,26 @@
         </p>
       </div>
 
-      <form>
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" />
-
-        <label for="email">Email address</label>
-        <input type="email" name="email" id="email" />
-
-        <textarea
-        name="message"
-        id="message"
-        cols="30"
-        rows="10"
-        placeholder="Message"
-      ></textarea>
-
-      
-      <button class="submitBtn">Submit</button>
-      </form>
+        <form class="contactForm">
+          <div class="inputs">
+            <label class="sr-only" for="name">Name</label>
+            <input  class="name" type="text" name="name" id="name" placeholder="Name"/>
+            
+            <label class="sr-only" for="email">Email address</label>
+            <input class="email" type="email" name="email" id="email" placeholder="Email Address" />
+          </div>
+  
+          <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Message"
+        ></textarea>
+  
+        
+        <button class="submitBtn">Submit</button>
+        </form>
     </main>
 
     <footer>

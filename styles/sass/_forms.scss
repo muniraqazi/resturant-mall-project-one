@@ -1,0 +1,70 @@
+fieldset {
+  background-color: $pine;
+  border: none;
+  display: flex;
+  justify-content: flex-end;
+  height: 40vh;
+
+  @include tabletSize2 {
+    justify-content: center;
+  }
+
+}
+
+form {
+  width: 55%;
+  font-family: $body-font;
+  font-size: 1.8rem;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  margin-right: 3%;
+
+  @include tabletSize {
+    width: 80%;
+    margin-top: 10%;
+  }
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  width: 45%;
+  border: none;
+  border-bottom: 2px solid $yellow;
+  background-color: $pine;
+}
+
+.name,
+.email {
+  padding: 20px;
+  color: white;
+
+  @include phoneSize {
+    font-size: 1.6rem;
+  }
+
+}
+
+textarea {
+  color: $white;
+  padding: 15px;
+  background-color: $pine;
+  border: 2px solid $yellow;
+  margin-top: 2%;
+}
+
+.commentBtn,
+.submitBtn {
+    padding: 10px 10px;
+    background-color: $yellow;
+    color: $black;
+    border: none;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    margin: 20px 0;
+}
+

@@ -2,11 +2,19 @@
   background-color: $pine;
   height: 53vh;
   
+  @include tabletSize {
+    height: auto;
+  }
+  
 }
 
 .natureSectionContainer {
   display: flex;
   padding-top: 4%;
+  @include tabletSize {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .natureImgContainer {
@@ -14,12 +22,40 @@
   box-shadow: -20px 20px $yellow;
   position: relative;
   bottom: -25px;
+  @include laptopSize {
+    width: 27.8%;
+  }
+
+  @include tabletSize {
+    width: 80%;
+  }
+
+  @include tabletSize2 {
+    height: 10%;
+  }
 }
 
 .natureTxt {
   width: 70%;
   padding-left: 10%;
   padding-top: 1.3%;
+  @include laptopSize {
+    padding-top: 0;
+  }
+  @include phoneSize {
+    h3 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.4rem;
+    }
+    margin-top: 10%;
+  }
+
+  @include tabletSize {
+    width: 100%;
+    padding-top: 10%;
+  }
 }
 
 

@@ -10,10 +10,183 @@ h4 {
 
 .commentsSection {
   background-color: $pine;
-  // display: flex;
-  // width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  height: 80vh;
+
+  @include tabletSize {
+    height: auto;
+  }
 }
 
-.feature {
+.blogContainer {
   background-color: $pine;
+  display: flex;
+  justify-content: space-evenly;
+
+  @include laptopSize {
+    justify-content: space-between;
+  }
+
+  @include tabletSize {
+    flex-direction: column;
+    align-items: center;
+  }
 }
+
+.leftContainer {
+  width: 30%;
+  height: 20%;
+  position: relative;
+  top: 15vh;
+  background-color: $almost-black;
+
+  @include laptopSize {
+    left: 5%;
+    width: 35%;
+  }
+
+  @include tabletSize {
+    width: 80%;
+    position: initial;
+  }
+
+  li {
+    font-family: $body-font;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: $white;
+    margin-left: 5%;
+  }
+
+  ul {
+    h3 {
+      margin-top: 15%;
+      font-size: 3.2rem;
+    }
+  }
+}
+
+.featureTxt {
+  padding: 8%;
+  h3 {
+    margin-bottom: 3%;
+    font-size: 3.2rem;
+  }
+  
+}
+
+.featureImg {
+  position: relative;
+
+  top: -5vh;
+  left: -3vw;
+}
+
+.rightContainer {
+  width: 50%;
+  position: relative;
+  top: -15vh;
+
+  
+  p {
+    padding-top: 25px;
+  }
+    @include laptopSize {
+      width: 55%;
+      right: -3%;
+    }
+
+    @include tabletSize {
+      width: 80%;
+      position: initial;
+      margin-top: 5%;
+    }
+}
+
+.overlayImgContainer {
+  box-shadow: -20px 20px $yellow;
+  @include laptopSize {
+    width: 95%;
+  }
+}
+
+.employmentOps {
+  position: relative;
+  left: -20px;
+  top: 20px;
+  border-left: 5px solid $yellow;
+  border-bottom: 5px solid $yellow ;
+  padding: 10%;
+
+  
+  h3 {
+    margin-bottom: 3%;
+  }
+}
+
+.commentsContainer {
+  width: 58%;
+  
+  @include tabletSize {
+    width: 90%;
+    margin-top: 10%;
+  }
+
+  @include tabletSize2 {
+    width: 90%;
+    margin-top: 10%;
+  }
+
+}
+
+.commentOne {
+  display: flex;
+  margin-bottom: 5%;
+
+  @include phoneSize {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.commentTwo {
+  display: flex;
+
+  @include phoneSize {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.commentImgOne,
+.commentImgTwo {
+  width: 200px;
+  margin-right: 50px;
+
+  @include laptopSize {
+    width: 12%;
+  }
+
+  @include phoneSize {
+    width: 40%;
+    margin: 5% 0;
+  }
+
+}
+
+.commentOneTxt,
+.commentTwoTxt {
+  width: 70%;
+  h4 {
+    color: $yellow;
+    margin-bottom: 2%;
+  }
+  @include phoneSize {
+    width: 95%;
+    text-align: center;
+  }
+}
+

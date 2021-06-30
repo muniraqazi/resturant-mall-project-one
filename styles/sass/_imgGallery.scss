@@ -1,6 +1,9 @@
 .imgGallery {
   background-color: $almost-black;
   height: 60vh;
+  @include tabletSize {
+    height: auto;
+  }
 }
 
 .imgGalleryContainer ul {
@@ -8,6 +11,9 @@
   list-style: none;
   width: 100%;
   padding-top: 70px;
+  @include tabletSize {
+    padding-bottom: 10%;
+  }
 }
 
 .imgGalleryContainer li {

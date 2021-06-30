@@ -10,6 +10,23 @@
   position: absolute;
   top: -55vh;
   right: 0px;
+
+  @include laptopSize {
+    width: 40%;
+    top: -30vh;
+  }
+  @include tabletSize {
+    top: -15vh;
+    right: -41px;
+  }
+
+  @include tabletSize2 {
+    right: -56px;
+  }
+
+  @include phoneSize {
+    top: -10vh;
+  }
 }
 
 .circle {
@@ -30,21 +47,37 @@
 
 i.fa-users {
   color: $black;
+  @include laptopSize {
+    left: 7px;
+    top: 2px;
+  }
 }
 
 i.fa-map-marker-alt {
   left: 14px;
   color: $black;
+  @include laptopSize {
+    left: 13px;
+    top: 2px;
+  }
 }
 
 i.fa-sticky-note {
   left: 14px;
   color: $black;
+  @include laptopSize {
+    left: 13px;
+    top: 2px;
+  }
 }
 
 i.fa-phone {
   left: 10px;
   color: $black;
+  @include laptopSize {
+    left: 10px;
+    top: 2px;
+  }
 }
 
 
@@ -67,23 +100,52 @@ p {
 .aboutSectionContainer {
   background-color: $pine;
   height: 80vh;
+  @include laptopSize {
+    height: 90vh;
+  }
+
+  @include phoneSize {
+    height: auto;
+  }
+  
   ul {
     padding-top: 13%;
+
+    @include phoneSize {
+      padding-bottom: 60px;
+    }
+
+    @include laptopSize {
+      padding-top: 18%;
+    }
   }
 }
 
 .aboutSection {
   display: flex;
   flex-wrap: wrap;
-  // margin: 0 50px;
-  // flex-direction: column;
-
   li {
     width: 50%;
     // margin: 20px;
     padding: 20px;
     list-style: none;
     display: flex;
+
+    @include phoneSize {
+      width: 100%;
+      padding: 10px 5px;
+    }
+  }
+
+  @include phoneSize {
+    flex-direction: column;
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.4rem;
+    }
+    
   }
 }
 

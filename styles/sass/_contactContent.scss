@@ -1,17 +1,64 @@
-.infoContainer {
+main {
   background-color: $pine;
+  
+  @include tabletSize {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+.infoContainer {
+  padding: 5.6%;
+  padding-left: 16%;
+  .emailTxt {
+    margin: 15px 0;
+  }
+
+  @include tabletSize {
+    padding: 0;
+    padding-top: 8%;
+  }
+
+  @include phoneSize {
+    padding-bottom: 2%;
+  }
 }
 
 i {
   color: $yellow;
+  margin: 10px 0;
+  margin-right: 15px;
 }
 
-.submitBtn {
-  padding: 10px 10px;
-  background-color: $yellow;
-  color: $black;
-  border: none;
-  text-transform: uppercase;
-  font-size: 1.4rem;
-  margin: 20px 0;
+.contactForm {
+  position: absolute;
+  bottom: 10%;
+  right: 3%;
+  background-color: $almost-black;
+  box-shadow: 20px 20px $yellow;
+  padding: 0 5%;
+  height: 50vh;
+  width: 50%;
+  display: flex;
+
+  @include tabletSize {
+    position: initial;
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+  }
+
+  input {
+    background-color: transparent;
+    margin-top: 2% ;
+    width: 45%;
+  }
+
+  textarea {
+    background-color: transparent;
+  }
 }
+
