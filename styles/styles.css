@@ -288,16 +288,21 @@ h1 span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 50px;
 }
 .headerNav ul li {
   list-style: none;
+  padding: 15px 40px 15px 0;
 }
 .headerNav ul li a {
   font-size: 1.8rem;
   font-family: "Josefin Sans", sans-serif;
   color: #FFFF;
   text-decoration: none;
-  padding: 15px 40px;
+  border-bottom: 2px solid transparent;
+}
+.headerNav ul li a:hover, .headerNav ul li a:focus {
+  border-bottom: 2px solid #FFD300;
 }
 
 nav {
@@ -311,6 +316,26 @@ nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   list-style: none;
+}
+
+footer {
+  background-color: #0F0F0F;
+  text-align: center;
+}
+footer p {
+  font-size: 1.4rem;
+}
+
+.blogHeader {
+  background-image: url(../../assets/blog-header.jpg);
+  background-position: center;
+  background-size: fill;
+}
+
+.contactHeader {
+  background-image: url(../../assets/contact-header.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .overlayImgContainer {
@@ -338,23 +363,29 @@ nav {
   right: 5px;
 }
 
+i.fa-users {
+  color: #0F0F0F;
+}
+
 i.fa-map-marker-alt {
   left: 14px;
+  color: #0F0F0F;
 }
 
 i.fa-sticky-note {
   left: 14px;
+  color: #0F0F0F;
 }
 
 i.fa-phone {
   left: 10px;
+  color: #0F0F0F;
 }
 
 h2 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 500;
   font-size: 2.8rem;
-  line-height: 6.2rem;
   text-transform: uppercase;
   color: #FFFF;
 }
@@ -413,6 +444,8 @@ p {
   -webkit-box-shadow: 20px 20px #FFD300;
           box-shadow: 20px 20px #FFD300;
   width: 40%;
+  position: relative;
+  bottom: 40px;
 }
 
 .trySomething {
@@ -438,11 +471,114 @@ p {
   -webkit-box-shadow: -20px 20px #FFD300;
           box-shadow: -20px 20px #FFD300;
   width: 40%;
+  position: relative;
+  top: 40px;
 }
 
 .yellowBtn {
   padding: 10px 10px;
   background-color: #FFD300;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  margin: 20px 0;
+}
+
+.blackBtn {
+  padding: 10px 10px;
+  background-color: #0F0F0F;
+  color: #FFFF;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  margin: 20px 0;
+}
+
+.giftCardSection {
+  background-color: #2B331B;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.natureSection {
+  background-color: #2B331B;
+  height: 53vh;
+}
+
+.natureSectionContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 4%;
+}
+
+.natureImgContainer {
+  width: 22%;
+  -webkit-box-shadow: -20px 20px #FFD300;
+          box-shadow: -20px 20px #FFD300;
+  position: relative;
+  bottom: -25px;
+}
+
+.natureTxt {
+  width: 70%;
+  padding-left: 10%;
+  padding-top: 1.3%;
+}
+
+.imgGallery {
+  background-color: #171B0E;
+  height: 60vh;
+}
+
+.imgGalleryContainer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  width: 100%;
+  padding-top: 70px;
+}
+
+.imgGalleryContainer li {
+  margin-right: 30px;
+  width: calc((100% - 60px) / 3);
+}
+
+.employmentOps {
+  background-color: #2B331B;
+}
+
+h4 {
+  color: #FFD300;
+}
+
+.commentsSection {
+  background-color: #2B331B;
+}
+
+.feature {
+  background-color: #2B331B;
+}
+
+.infoContainer {
+  background-color: #2B331B;
+}
+
+i {
+  color: #FFD300;
+}
+
+.submitBtn {
+  padding: 10px 10px;
+  background-color: #FFD300;
+  color: #0F0F0F;
   border: none;
   text-transform: uppercase;
   font-size: 1.4rem;
@@ -456,6 +592,21 @@ img {
 h2 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 3.5rem;
+}
+
+h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3.5rem;
+  color: #FFD300;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+h4 {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #FFFF;
 }
 
 p {

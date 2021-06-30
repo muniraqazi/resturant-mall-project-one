@@ -1,10 +1,14 @@
 @import "setup";
 @import "variables";
 @import "mixins";
-@import "header";
+@import "headerFooter";
 @import "aboutSection";
 @import "foodSection";
-
+@import "giftCardSection";
+@import "natureSection";
+@import "imgGallery";
+@import "blogContent";
+@import "contactContent";
 
 img {
   width: 100%;
@@ -15,7 +19,22 @@ h2 {
   font-size: 3.5rem;
 }
 
-p {
+h3 {
+  font-family: $header-font;
+  font-size: 3.5rem;
+  color: $yellow;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+h4 {
+  font-family: $body-font;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: $white;
+}
+
+p{
   font-family: $body-font;
   font-size: 1.8rem;
   line-height: 2.5rem;
@@ -28,3 +47,4 @@ p {
   max-width: 1400px;
   margin: 0 auto;
 }
+

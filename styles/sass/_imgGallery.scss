@@ -1,0 +1,16 @@
+.imgGallery {
+  background-color: $almost-black;
+  height: 60vh;
+}
+
+.imgGalleryContainer ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  padding-top: 70px;
+}
+
+.imgGalleryContainer li {
+  margin-right: 30px;
+  width: calc((100% - 60px) / 3);
+}

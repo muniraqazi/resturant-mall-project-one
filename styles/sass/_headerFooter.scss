@@ -35,14 +35,21 @@ h1 span {
   height: 100%;
   ul {
     display: flex;
+    margin-top: 50px;
     li {
       list-style: none;
+      padding: 15px 40px 15px 0;
       a {
         font-size: 1.8rem;
         font-family: $header-font;
         color: $white;
         text-decoration: none;
-        padding: 15px 40px;
+
+        border-bottom: 2px solid transparent;
+        &:hover,
+        &:focus {
+          border-bottom: 2px solid $yellow;
+        }
       }
     }
   }
@@ -56,3 +63,23 @@ nav {
   list-style: none;
 }
 
+footer {
+  background-color: $black;
+  text-align: center;
+  p {
+    font-size: 1.4rem;
+  }
+}
+
+.blogHeader {
+  background-image: url(../../assets/blog-header.jpg);
+  background-position: center;
+  background-size: fill;
+  // height: 100vh;
+}
+
+.contactHeader {
+  background-image: url(../../assets/contact-header.jpg);
+  background-position: center;
+  background-size: cover;
+}

@@ -16,6 +16,8 @@
 .leftImgContainer {
   box-shadow: 20px 20px $yellow;
   width: 40%;
+  position: relative;
+  bottom: 40px;
 }
 
 .trySomething {
@@ -25,7 +27,6 @@
 }
 
 .trySomethingTxt {
-  // padding: 0 15%;
   text-align: right;
   width: 40%;
   padding: 6.3% 0 6.3% 10%;
@@ -34,6 +35,8 @@
 .rightImgContainer {
   box-shadow: -20px 20px $yellow;
   width: 40%;
+  position: relative;
+  top: 40px;
 }
 
 .yellowBtn {
