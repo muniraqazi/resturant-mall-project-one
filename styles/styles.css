@@ -451,6 +451,8 @@ footer p {
 
 i.fa-users {
   color: #0F0F0F;
+  left: 7px;
+  top: 1px;
 }
 @media (max-width: 1280px) {
   i.fa-users {
@@ -461,6 +463,7 @@ i.fa-users {
 
 i.fa-map-marker-alt {
   left: 14px;
+  top: 1px;
   color: #0F0F0F;
 }
 @media (max-width: 1280px) {
@@ -472,6 +475,7 @@ i.fa-map-marker-alt {
 
 i.fa-sticky-note {
   left: 14px;
+  top: 1px;
   color: #0F0F0F;
 }
 @media (max-width: 1280px) {
@@ -483,6 +487,7 @@ i.fa-sticky-note {
 
 i.fa-phone {
   left: 10px;
+  top: 1px;
   color: #0F0F0F;
 }
 @media (max-width: 1280px) {
@@ -663,11 +668,17 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-direction: column;
-      flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media (max-width: 1150px) {
+  .trySomething {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .trySomethingTxt {
@@ -687,7 +698,7 @@ p {
     font-size: 1.8rem;
   }
 }
-@media (max-width: 1280px) and (max-width: 835px) {
+@media (max-width: 835px) {
   .trySomethingTxt {
     width: 80%;
     margin-top: 10%;
