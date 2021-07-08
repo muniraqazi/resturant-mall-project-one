@@ -1,0 +1,49 @@
+.modal {
+  background-color: rgba(0,0,0,0.8);
+  position: absolute;
+  top: 90;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.modalHidden {
+    display: none;
+  }
+
+  .modalCloseBtn {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+  
+  .modalContainer {
+    background-color: $white;
+    padding: 2rem 4rem;
+    p, span {
+      font-size: 3rem;
+      color: $black;
+      font-family: $header-font;
+      line-height: 5rem;
+    }
+    input[type=email] {
+      background-color: $white;
+      width: 100%;
+      padding: 2rem;
+      border: 5px solid $yellow;
+    }
+    button {
+      width: 100%;
+      padding: 2rem;
+      background-color: $yellow;
+      border: none;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+  }
+}
+
+

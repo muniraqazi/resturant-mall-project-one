@@ -163,8 +163,22 @@
             dolor quo amet labore id eos, voluptate doloremque sit perferendis
             facere voluptates perspiciatis.
           </p>
-          <button class="blackBtn">Find out more</button>
+          <button class="blackBtn" id="openModal">Find out more</button>
         </div>
+
+        <div class="modal modalHidden">
+          <div class="modalContainer">
+            <div class="modalCloseBtn">
+              <span>X</span>
+            </div>
+            <p>Please enter your email address for a chance to win a $100 giftcard!</p>
+            <form  id="submitModal">
+              <input type="email" name="email" id="email" placeholder="email@address.com">
+              <button>Submit</button>
+            </form>
+          </div>
+        </div>
+
         <!-- end of wrapper -->
       </section>
       <!-- end of gift card section -->
@@ -230,5 +244,7 @@
     <footer>
       <p>Copyright © 2021 Juno College</p>
     </footer>
+
+    <script src="./app.js"></script>
   </body>
 </html>
